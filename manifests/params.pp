@@ -34,7 +34,7 @@ class conserver::params {
           $status_cmd = true
         }
         '8','stretch/sid','16.04': {
-          $server_init_config_file = '/usr/lib/systemd/system/conserver.service'
+          $server_init_config_file = '/lib/systemd/system/conserver.service'
           $server_init_config_tpl = 'conserver/server/init_config_file_systemd.erb'
           $server_init_config_hash = {
             'Unit'          => {
