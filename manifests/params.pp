@@ -26,14 +26,14 @@ class conserver::params {
           $server_user = 'conservr'
           $status_cmd = false
         }
-        '7': {
+        '7','16.04': {
           $server_init_config_file = '/etc/conserver/server.local'
           $server_init_config_tpl = 'conserver/server/init_config_file.erb'
           $server_init_config_hash = {}
           $server_user = 'conservr'
           $status_cmd = true
         }
-        '8','stretch/sid','16.04': {
+        '8','stretch/sid': {
           $server_init_config_file = '/lib/systemd/system/conserver.service'
           $server_init_config_tpl = 'conserver/server/init_config_file_systemd.erb'
           $server_init_config_hash = {
