@@ -26,7 +26,7 @@ class conserver::params {
           $server_user = 'conservr'
           $status_cmd = false
         }
-        '7','16.04': {
+        '7','16.04','18.04': {
           $server_init_config_file = '/etc/conserver/server.local'
           $server_init_config_tpl = 'conserver/server/init_config_file.erb'
           $server_init_config_hash = {}
